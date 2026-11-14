@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101a35"><meta name="description" content="NEXORA Move - pelacak aktivitas harian">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png">
+<title>NEXORA Move</title><link rel="stylesheet" href="style.css">
+</head><body>
+<div class="app">
+<header><div class="brand"><div class="logo">N</div><div><b>NEXORA <span>MOVE</span></b><small>MOVE WITH PURPOSE</small></div></div><button id="install" class="install hidden">Install</button></header>
+<main>
+<section class="welcome"><div><small>SELAMAT DATANG</small><h1>Hari ini, bergeraklah<br><em>lebih baik.</em></h1></div><div class="date" id="date"></div></section>
+<section class="hero card"><div class="hero-top"><span>LANGKAH HARI INI</span><span class="live-dot">● LIVE</span></div><div class="steps"><strong id="steps">0</strong><span> langkah</span></div><div class="progress"><i id="stepbar"></i></div><div class="muted"><span id="goaltext">Target harian: 6.000 langkah</span><span id="steppercent">0%</span></div><div class="stats"><div><b id="distance">0.00 km</b><small>JARAK</small></div><div><b id="duration">00:00</b><small>DURASI</small></div><div><b id="calories">0</b><small>EST. KALORI</small></div></div></section>
+<section class="section-head"><div><small>AKTIVITAS</small><h2>Mulai bergerak</h2></div><span class="muted">Pilih mode</span></section>
+<div class="modes"><button class="mode selected" data-mode="walking"><span>🚶</span><b>Jalan</b></button><button class="mode" data-mode="running"><span>🏃</span><b>Lari</b></button><button class="mode" data-mode="cycling"><span>🚴</span><b>Sepeda</b></button></div>
+<section class="card tracker"><div class="tracker-head"><div><small id="mode-label">MODE JALAN</small><h2 id="tracker-state">Siap memulai?</h2></div><span class="status" id="status">SIAP</span></div><div class="timer" id="timer">00:00:00</div><div class="track-meta"><span>Jarak sesi <b id="session-distance">0.00 km</b></span><span>GPS <b id="gps">Belum aktif</b></span></div><button id="start" class="primary">Mulai aktivitas</button><p class="hint">Izinkan akses lokasi agar jarak dan rute dapat dihitung. Pelacakan berjalan selama halaman tetap aktif.</p></section>
+<section class="section-head"><div><small>RIWAYAT</small><h2>Aktivitas terakhir</h2></div><button id="clear" class="text-btn">Hapus</button></section>
+<div id="history" class="history"><div class="empty">Belum ada aktivitas. Mulai bergerak untuk mencatat aktivitas pertamamu.</div></div>
+</main><footer>NEXORA MOVE <span>•</span> VERSI 1.0</footer>
+</div><script src="app.js"></script></body></html>
